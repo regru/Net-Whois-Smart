@@ -15,10 +15,10 @@ sub whois {
     my $query = delete $params{query};
 
     POE::Session->create(
-	inline_states => {        
-	    _start    => \&_start,
+        inline_states => {        
+            _start    => \&_start,
             _response =>\&_response,
-	},
+        },
         args => [ $query, \%params ],
     );
 

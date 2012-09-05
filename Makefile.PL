@@ -10,7 +10,7 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM => {
         'Test::More' 				=> 0,
-	'POE::Component::Client::Whois::Smart'  => 0,
+        'POE::Component::Client::Whois::Smart'  => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Net-Whois-Smart-*' },
